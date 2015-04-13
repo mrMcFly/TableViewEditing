@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E843D0FA1AD79F4E00E9E597 /* ASSimpleAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E843D0F91AD79F4E00E9E597 /* ASSimpleAnimationViewController.m */; };
+		E843D0FC1AD7A49700E9E597 /* HomerSwim.png in Resources */ = {isa = PBXBuildFile; fileRef = E843D0FB1AD7A49700E9E597 /* HomerSwim.png */; };
+		E843D0FE1AD7A49E00E9E597 /* Donat.png in Resources */ = {isa = PBXBuildFile; fileRef = E843D0FD1AD7A49E00E9E597 /* Donat.png */; };
+		E843D1021AD7AEC400E9E597 /* HomerCatchTheDonat.png in Resources */ = {isa = PBXBuildFile; fileRef = E843D1011AD7AEC400E9E597 /* HomerCatchTheDonat.png */; };
+		E843D1041AD7B33F00E9E597 /* HomerChase.png in Resources */ = {isa = PBXBuildFile; fileRef = E843D1031AD7B33F00E9E597 /* HomerChase.png */; };
 		E8FBC7591AA745AF00CDC926 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBC7581AA745AF00CDC926 /* main.m */; };
 		E8FBC75C1AA745AF00CDC926 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBC75B1AA745AF00CDC926 /* AppDelegate.m */; };
 		E8FBC75F1AA745B000CDC926 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBC75E1AA745B000CDC926 /* ViewController.m */; };
@@ -14,6 +19,10 @@
 		E8FBC7641AA745B000CDC926 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8FBC7631AA745B000CDC926 /* Images.xcassets */; };
 		E8FBC7671AA745B000CDC926 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8FBC7651AA745B000CDC926 /* LaunchScreen.xib */; };
 		E8FBC7731AA745B000CDC926 /* ASTableViewEditingHWTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBC7721AA745B000CDC926 /* ASTableViewEditingHWTests.m */; };
+		E8FBC77E1AA745C000CDC926 /* ASStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBC77D1AA745C000CDC926 /* ASStudent.m */; };
+		E8FBC7811AA745CC00CDC926 /* ASGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBC7801AA745CC00CDC926 /* ASGroup.m */; };
+		E8FBC7841AA74F0A00CDC926 /* student_bad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8FBC7831AA74F0A00CDC926 /* student_bad.jpg */; };
+		E8FBC7861AA74F1000CDC926 /* student_good.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8FBC7851AA74F1000CDC926 /* student_good.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E843D0F81AD79F4E00E9E597 /* ASSimpleAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSimpleAnimationViewController.h; sourceTree = "<group>"; };
+		E843D0F91AD79F4E00E9E597 /* ASSimpleAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSimpleAnimationViewController.m; sourceTree = "<group>"; };
+		E843D0FB1AD7A49700E9E597 /* HomerSwim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomerSwim.png; sourceTree = "<group>"; };
+		E843D0FD1AD7A49E00E9E597 /* Donat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Donat.png; sourceTree = "<group>"; };
+		E843D1011AD7AEC400E9E597 /* HomerCatchTheDonat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomerCatchTheDonat.png; sourceTree = "<group>"; };
+		E843D1031AD7B33F00E9E597 /* HomerChase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomerChase.png; sourceTree = "<group>"; };
 		E8FBC7531AA745AF00CDC926 /* ASTableViewEditingHW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASTableViewEditingHW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8FBC7571AA745AF00CDC926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8FBC7581AA745AF00CDC926 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +55,12 @@
 		E8FBC76C1AA745B000CDC926 /* ASTableViewEditingHWTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASTableViewEditingHWTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8FBC7711AA745B000CDC926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8FBC7721AA745B000CDC926 /* ASTableViewEditingHWTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASTableViewEditingHWTests.m; sourceTree = "<group>"; };
+		E8FBC77C1AA745C000CDC926 /* ASStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASStudent.h; sourceTree = "<group>"; };
+		E8FBC77D1AA745C000CDC926 /* ASStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASStudent.m; sourceTree = "<group>"; };
+		E8FBC77F1AA745CC00CDC926 /* ASGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASGroup.h; sourceTree = "<group>"; };
+		E8FBC7801AA745CC00CDC926 /* ASGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASGroup.m; sourceTree = "<group>"; };
+		E8FBC7831AA74F0A00CDC926 /* student_bad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = student_bad.jpg; sourceTree = "<group>"; };
+		E8FBC7851AA74F1000CDC926 /* student_good.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = student_good.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +87,10 @@
 				E8FBC7551AA745AF00CDC926 /* ASTableViewEditingHW */,
 				E8FBC76F1AA745B000CDC926 /* ASTableViewEditingHWTests */,
 				E8FBC7541AA745AF00CDC926 /* Products */,
+				E843D0FB1AD7A49700E9E597 /* HomerSwim.png */,
+				E843D0FD1AD7A49E00E9E597 /* Donat.png */,
+				E843D1011AD7AEC400E9E597 /* HomerCatchTheDonat.png */,
+				E843D1031AD7B33F00E9E597 /* HomerChase.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,9 +110,13 @@
 				E8FBC75B1AA745AF00CDC926 /* AppDelegate.m */,
 				E8FBC75D1AA745B000CDC926 /* ViewController.h */,
 				E8FBC75E1AA745B000CDC926 /* ViewController.m */,
+				E843D0F81AD79F4E00E9E597 /* ASSimpleAnimationViewController.h */,
+				E843D0F91AD79F4E00E9E597 /* ASSimpleAnimationViewController.m */,
 				E8FBC7601AA745B000CDC926 /* Main.storyboard */,
 				E8FBC7631AA745B000CDC926 /* Images.xcassets */,
 				E8FBC7651AA745B000CDC926 /* LaunchScreen.xib */,
+				E8FBC7821AA745D200CDC926 /* Models */,
+				E8FBC7871AA74F1900CDC926 /* Images */,
 				E8FBC7561AA745AF00CDC926 /* Supporting Files */,
 			);
 			path = ASTableViewEditingHW;
@@ -117,6 +146,28 @@
 				E8FBC7711AA745B000CDC926 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E8FBC7821AA745D200CDC926 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E8FBC77C1AA745C000CDC926 /* ASStudent.h */,
+				E8FBC77D1AA745C000CDC926 /* ASStudent.m */,
+				E8FBC77F1AA745CC00CDC926 /* ASGroup.h */,
+				E8FBC7801AA745CC00CDC926 /* ASGroup.m */,
+			);
+			name = Models;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		E8FBC7871AA74F1900CDC926 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E8FBC7831AA74F0A00CDC926 /* student_bad.jpg */,
+				E8FBC7851AA74F1000CDC926 /* student_good.jpg */,
+			);
+			name = Images;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +250,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E843D1041AD7B33F00E9E597 /* HomerChase.png in Resources */,
 				E8FBC7621AA745B000CDC926 /* Main.storyboard in Resources */,
+				E843D0FE1AD7A49E00E9E597 /* Donat.png in Resources */,
+				E843D0FC1AD7A49700E9E597 /* HomerSwim.png in Resources */,
 				E8FBC7671AA745B000CDC926 /* LaunchScreen.xib in Resources */,
+				E843D1021AD7AEC400E9E597 /* HomerCatchTheDonat.png in Resources */,
 				E8FBC7641AA745B000CDC926 /* Images.xcassets in Resources */,
+				E8FBC7841AA74F0A00CDC926 /* student_bad.jpg in Resources */,
+				E8FBC7861AA74F1000CDC926 /* student_good.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +276,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8FBC7811AA745CC00CDC926 /* ASGroup.m in Sources */,
 				E8FBC75F1AA745B000CDC926 /* ViewController.m in Sources */,
+				E8FBC77E1AA745C000CDC926 /* ASStudent.m in Sources */,
 				E8FBC75C1AA745AF00CDC926 /* AppDelegate.m in Sources */,
 				E8FBC7591AA745AF00CDC926 /* main.m in Sources */,
+				E843D0FA1AD79F4E00E9E597 /* ASSimpleAnimationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +474,7 @@
 				E8FBC7781AA745B000CDC926 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8FBC7791AA745B000CDC926 /* Build configuration list for PBXNativeTarget "ASTableViewEditingHWTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +483,7 @@
 				E8FBC77B1AA745B000CDC926 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
