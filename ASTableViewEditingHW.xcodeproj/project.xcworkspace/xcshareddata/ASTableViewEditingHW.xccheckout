@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D8C0B6FB-4AA0-45D8-8D1F-B83BB6C0B351</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ASTableViewEditingHW</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E229AB25A4F2CA307160E022DAC13531B7CC14A5</key>
+		<string>github.com:mrMcFly/ASTableViewEditingHW.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ASTableViewEditingHW.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E229AB25A4F2CA307160E022DAC13531B7CC14A5</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:mrMcFly/ASTableViewEditingHW.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E229AB25A4F2CA307160E022DAC13531B7CC14A5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E229AB25A4F2CA307160E022DAC13531B7CC14A5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ASTableViewEditingHW</string>
+		</dict>
+	</array>
+</dict>
+</plist>
