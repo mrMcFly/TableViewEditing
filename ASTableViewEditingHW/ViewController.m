@@ -36,10 +36,6 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
-    //Edit! Behavior define in editTableView method.
-/*//    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNewGroup:)];
-//    self.navigationItem.leftBarButtonItem = leftItem;*/
-    
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(editTableView:)];
     self.navigationItem.rightBarButtonItem = rightItem;
     
@@ -48,13 +44,12 @@
     self.tableView.scrollIndicatorInsets = insets;
     
     self.tableView.allowsSelectionDuringEditing = YES;
-    //self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLineEtched;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLineEtched;
 }
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
     self.arrayOfGroups = [NSMutableArray array];
     
@@ -77,7 +72,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
@@ -160,7 +154,7 @@
         group.arrayOfStudents = tempArray;
         NSLog(@"%lu", (unsigned long)[group.arrayOfStudents count]);
         
-        //[self.tableView beginUpdates];
+        [self.tableView beginUpdates];
         
         if ([group.arrayOfStudents count] > 0) {
             [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationLeft];
@@ -171,10 +165,9 @@
             [self.tableView deleteSections:[NSIndexSet indexSetWithIndex:indexPath.section] withRowAnimation:UITableViewRowAnimationLeft];
         }
         
-        //[self.tableView endUpdates];
+        [self.tableView endUpdates];
 
     }
-    [self.tableView reloadData];
 }
 
 
@@ -217,14 +210,6 @@
 }
 
 
-- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
-    
-    ASGroup *group = [self.arrayOfGroups objectAtIndex:section];
-    NSString *titleForFooter = [NSString stringWithFormat:@"Students count: %lu", (unsigned long)[group.arrayOfStudents count]];
-    return titleForFooter;
-}
-
-
 #pragma mark - UITableViewDelegate - 
 
 - (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -245,10 +230,10 @@
         [tempArray insertObject:[ASStudent createNewStudent] atIndex:studentIndex];
         group.arrayOfStudents = tempArray;
         
-//        [self.tableView beginUpdates];
-//        NSIndexPath *newIndexPath = [NSIndexPath indexPathForItem:studentIndex+1 inSection:indexPath.section];
-//        [self.tableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationLeft];
-//        [self.tableView endUpdates];
+        [self.tableView beginUpdates];
+        NSIndexPath *newIndexPath = [NSIndexPath indexPathForItem:studentIndex+1 inSection:indexPath.section];
+        [self.tableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationLeft];
+        [self.tableView endUpdates];
         
         [self preventionOfFrequentTapsForThisAction];
     } else if (indexPath.row > 0 && !(self.tableView.isEditing)){
@@ -256,28 +241,7 @@
         ASSimpleAnimationViewController *contr = [[ASSimpleAnimationViewController alloc]init];
         [self.navigationController pushViewController:contr animated:YES];
     }
-    [self.tableView reloadData]; //индексы отображаются корректно,но анимации нет.
 }
-
-
-//- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
-//    
-//    UIView *footerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0,
-//    CGRectGetWidth([tableView rectForFooterInSection:section]),
-//    CGRectGetHeight([tableView rectForFooterInSection:section]))];
-//    footerView.backgroundColor = [UIColor colorWithRed:0.429 green:0.795 blue:1.000 alpha:1.000];
-//    
-//    UILabel *footerTextLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 0,
-//    CGRectGetWidth([tableView rectForFooterInSection:section]) - 20,
-//    CGRectGetHeight([tableView rectForFooterInSection:section]))];
-//    footerTextLabel.textColor = [UIColor whiteColor];
-//    footerTextLabel.textAlignment = NSTextAlignmentRight;
-//    ASGroup *group = [self.arrayOfGroups objectAtIndex:section];
-//    footerTextLabel.text = [NSString stringWithFormat:@"Student count: %lu", (unsigned long)[group.arrayOfStudents count]];
-//    [footerView addSubview:footerTextLabel];
-//    
-//    return footerView;
-//}
 
 
 - (NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -298,13 +262,6 @@
     
     CGFloat headerHeight = 50.0;
     return headerHeight;
-}
-
-
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    
-    CGFloat footerHeight = 30.0;
-    return footerHeight;
 }
 
 
@@ -329,19 +286,17 @@
         newGroup.name = [NSString stringWithFormat:@"Group №%lu", [self.arrayOfGroups count] + 1];
         [self.arrayOfGroups insertObject:newGroup atIndex:0];
         
-//        [self.tableView beginUpdates];
-//        UITableViewRowAnimation animation = [self.arrayOfGroups count] % 2 ? UITableViewRowAnimationLeft : UITableViewRowAnimationRight;
-//        NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:0];
-//        [self.tableView insertSections:indexSet withRowAnimation:animation];
-//    
-//        
-//        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:([newGroup.arrayOfStudents count]-1)inSection:0];
-//        [self.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionBottom animated:YES];
-//        
-//        [self preventionOfFrequentTapsForThisAction];
-//        [self.tableView endUpdates];
+        [self.tableView beginUpdates];
+        UITableViewRowAnimation animation = [self.arrayOfGroups count] % 2 ? UITableViewRowAnimationLeft : UITableViewRowAnimationRight;
+        NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:0];
+        [self.tableView insertSections:indexSet withRowAnimation:animation];
     
-    [self.tableView reloadData]; //без этого теряется футер,но странное добавление.
+        
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:([newGroup.arrayOfStudents count]-1)inSection:0];
+        [self.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionBottom animated:YES];
+        
+        [self preventionOfFrequentTapsForThisAction];
+        [self.tableView endUpdates];    
 }
 
 
