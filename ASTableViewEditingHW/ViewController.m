@@ -14,7 +14,7 @@
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) NSMutableArray *arrayOfGroups;
-@property (weak,   nonatomic) UITableView *tableView;
+@property (weak,   nonatomic) UITableView    *tableView;
 @property (assign, nonatomic) NSInteger startNumbersOfGroup;
 
 @end
@@ -150,18 +150,15 @@
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         
         ASGroup *group = [self.arrayOfGroups objectAtIndex:indexPath.section];
-        NSLog(@"%lu", (unsigned long)[group.arrayOfStudents count]);
         NSMutableArray *tempArray = [NSMutableArray arrayWithArray:group.arrayOfStudents];
         [tempArray removeObjectAtIndex:indexPath.row - 1];
         group.arrayOfStudents = tempArray;
-        NSLog(@"%lu", (unsigned long)[group.arrayOfStudents count]);
         
         if ([group.arrayOfStudents count] > 0) {
             [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationLeft];
         }
         else{
             [self.arrayOfGroups removeObject:group];
-            NSLog(@"%lu",(unsigned long)[self.arrayOfGroups count]);
             [self.tableView deleteSections:[NSIndexSet indexSetWithIndex:indexPath.section] withRowAnimation:UITableViewRowAnimationLeft];
         }
     }
